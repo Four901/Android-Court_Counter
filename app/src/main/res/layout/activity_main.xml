@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+  <!--header-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text=" Court Counter"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:id="@+id/header_id"
+        />
+
+    <!--pointers-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:orientation="vertical"
+            >
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_weight="2"
+              android:text="Team A"
+              android:textSize="40sp"
+              android:textAlignment="center"
+              />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Points"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:id="@+id/deciderA_shower"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:text="0"
+                android:id="@+id/teamA_points_text_view"
+                android:textAlignment="center"
+                android:textSize="60sp"
+                />
+               <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="2"
+                   android:textColor="#876856"
+                   android:text="+3"
+                   android:onClick="teamA_HighInc"
+                   android:id="@+id/teamA_high"
+                   />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:text="+2"
+                android:textColor="#876856"
+                android:onClick="teamA_MidInc"
+                android:id="@+id/teamA_mid"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:text="Free Throw"
+                android:onClick="teamA_LowInc"
+                android:id="@+id/teamA_low"
+                android:textColor="#876856"
+                android:textAllCaps="true"
+                />
+
+
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text=""
+            android:background="@android:color/darker_gray"
+
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:text="Team B"
+                android:textSize="40sp"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Points"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:id="@+id/deciderB_shower"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:text="0"
+                android:textAlignment="center"
+                android:id="@+id/teamB_points_text_view"
+                android:textSize="60sp"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:text="+3"
+                android:id="@+id/teamB_high"
+                android:textColor="#876856"
+                android:onClick="teamB_HighInc"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:text="+2"
+                android:id="@+id/teamB_mid"
+                android:onClick="teamB_MidInc"
+                android:textColor="#876856"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:text="Free Throw"
+                android:id="@+id/teamB_low"
+                android:textAllCaps="true"
+                android:onClick="teamB_LowInc"
+                android:textColor="#876856"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+    <!--reset and decider-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="decide"
+            android:textAllCaps="true"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:id="@+id/decide"
+            android:onClick="Decider"
+            android:textColor="#876856"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="reset"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:textAllCaps="true"
+            android:onClick="Reset"
+            android:textColor="#876856"
+            />
+    </LinearLayout>
+
+</LinearLayout>
